@@ -1,0 +1,10 @@
+{
+    "name": "CodeScan",
+    "api": "Plugin.CodeScan",
+    "request": {
+        "opt": "string"
+    },
+    "response": {
+        "result": "string"
+    }
+}
