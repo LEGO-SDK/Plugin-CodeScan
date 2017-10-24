@@ -7,7 +7,7 @@
 //
 
 #import <LEGO-SDK/LGOBaseViewController.h>
-
+#import "LGOCodeScanPlugin.h"
 @interface CodeScanViewController : LGOBaseViewController
-
+@property (nonatomic, strong) LGOCodeScanperation *operation;
 @end

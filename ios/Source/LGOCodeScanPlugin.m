@@ -6,21 +6,14 @@
 #import <LEGO-SDK/LGOCore.h>
 #import "CodeScanViewController.h"
 #import <LEGO-SDK/LGOBaseNavigationController.h>
-@interface LGOCodeScanRequest: LGORequest
-
+@interface LGOCodeScanRequest()
 @property (nonatomic, copy) NSString *opt;
-@property (nonatomic, assign) BOOL closeAfter;
 @end
 
 @implementation LGOCodeScanRequest
 
 @end
 
-@interface LGOCodeScanResponse: LGOResponse
-
-@property (nonatomic, copy) NSString *result;
-
-@end
 
 @implementation LGOCodeScanResponse
 
@@ -32,17 +25,17 @@
 
 @end
 
-@interface LGOCodeScanperation: LGORequestable
-
-@property (nonatomic, strong) LGOCodeScanRequest *request;
+@interface LGOCodeScanperation()
 
 @end
 
 @implementation LGOCodeScanperation
 
 - (void)requestAsynchronize:(LGORequestableAsynchronizeBlock)callbackBlock {
+    self.callbackBlock = callbackBlock;
     [[NSOperationQueue mainQueue] addOperationWithBlock:^{
         CodeScanViewController *codeScanViewController = [CodeScanViewController new];
+        codeScanViewController.operation = self;
         LGOBaseNavigationController *navigationController = [[LGOBaseNavigationController alloc] initWithRootViewController:codeScanViewController];
         [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:navigationController animated:YES completion:nil];
     }];
