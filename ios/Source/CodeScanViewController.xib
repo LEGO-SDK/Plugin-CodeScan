@@ -63,16 +63,6 @@
                                     <color key="textColor" white="1" alpha="0.59999999999999998" colorSpace="calibratedWhite"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A7S-rf-Yty">
-                                    <rect key="frame" x="48.5" y="33" width="91" height="44"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="44" id="uU3-rf-PlP"/>
-                                    </constraints>
-                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <state key="normal" title="Option Button">
-                                        <color key="titleColor" red="0.0" green="0.67843137249999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </state>
-                                </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAk-7p-cbH">
                                     <rect key="frame" x="66.5" y="101" width="55" height="55"/>
                                     <constraints>
@@ -99,7 +89,6 @@
                             </subviews>
                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
                             <constraints>
-                                <constraint firstItem="A7S-rf-Yty" firstAttribute="centerX" secondItem="Spn-wh-HNM" secondAttribute="centerX" id="2Cj-66-ye5"/>
                                 <constraint firstItem="Spn-wh-HNM" firstAttribute="centerX" secondItem="alz-Rl-I4h" secondAttribute="centerX" id="Gt1-vN-RmR"/>
                                 <constraint firstAttribute="height" constant="200" id="HuK-f5-5cF"/>
                                 <constraint firstItem="ULy-fH-fjW" firstAttribute="centerX" secondItem="kAk-7p-cbH" secondAttribute="centerX" id="Uub-PH-cmO"/>
@@ -107,7 +96,6 @@
                                 <constraint firstItem="kAk-7p-cbH" firstAttribute="centerX" secondItem="alz-Rl-I4h" secondAttribute="centerX" id="bL4-wQ-Ilx"/>
                                 <constraint firstItem="Spn-wh-HNM" firstAttribute="top" secondItem="alz-Rl-I4h" secondAttribute="top" constant="16" id="bTU-Nm-hb4"/>
                                 <constraint firstAttribute="bottom" secondItem="kAk-7p-cbH" secondAttribute="bottom" constant="44" id="dRa-DJ-BXd"/>
-                                <constraint firstItem="A7S-rf-Yty" firstAttribute="top" secondItem="Spn-wh-HNM" secondAttribute="bottom" id="dnT-Pe-24u"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7r8-mQ-4GT">

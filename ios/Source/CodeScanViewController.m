@@ -35,6 +35,7 @@
 //    }];
 //    NSString *samplePage = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"sample" ofType:@"html"] encoding:NSUTF8StringEncoding error:NULL];
 //    [web1 loadHTMLString:samplePage baseURL:nil];
+    self.navigationItem.title = @"扫码";
     self.webView.hidden = YES;
     [self setupButton];
     [self setupScan];
