@@ -10,5 +10,6 @@ import com.opensource.legosdk.core.LGORequestContext
 class LGOCodeScanRequest(context: LGORequestContext?) : LGORequest(context) {
 
     var opt: String? = null
+    var closeAfter: Boolean = true
 
 }

@@ -6,7 +6,9 @@
         android:supportsRtl="true">
 
         <meta-data android:name="LGOModule.Plugin.CodeScan" android:value="com.opensource.legosdk.plugin.codescan.LGOCodeScan" />
-
+        <activity android:name=".CodeScanActivity" />
     </application>
 
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
 </manifest>
