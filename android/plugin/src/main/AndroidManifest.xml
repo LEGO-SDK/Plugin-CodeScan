@@ -7,6 +7,7 @@
 
         <meta-data android:name="LGOModule.Plugin.CodeScan" android:value="com.opensource.legosdk.plugin.codescan.LGOCodeScan" />
         <activity android:name=".CodeScanActivity" />
+        <activity android:name=".LGOCodeScanOperation$ImagePickerHandleActivity" />
     </application>
 
     <uses-permission android:name="android.permission.CAMERA"/>

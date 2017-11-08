@@ -36,16 +36,16 @@ class CodeScanActivity : LGOWebViewActivity(), QRCodeReaderView.OnQRCodeReadList
         val text = text ?: return
         LGOCodeScanOperation.callbackBlock?.let {
 
-            val response = LGOCodeScanResponse()
-            response.result = text
-            it.invoke(response.accept(null))
-
             intent.getBooleanExtra("closeAfter",true)?.let {
                 if (it){
                     readerView?.stopCamera()
                     finish()
                 }
             }
+
+            val response = LGOCodeScanResponse()
+            response.result = text
+            it.invoke(response.accept(null))
         }
         barcodeScanned = true
     }
