@@ -29,12 +29,6 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    WKWebView *web1 = (WKWebView *)self.webView;
-//    [web1 evaluateJavaScript:@"window.JSBridge && eval(window.JSBridge.bridgeScript())" completionHandler:^(id _Nullable obj, NSError * _Nullable error) {
-//        NSLog(@"%@",error);
-//    }];
-//    NSString *samplePage = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"sample" ofType:@"html"] encoding:NSUTF8StringEncoding error:NULL];
-//    [web1 loadHTMLString:samplePage baseURL:nil];
     self.navigationItem.title = @"扫码";
     self.webView.hidden = YES;
     [self setupButton];
