@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.name         = "LEGO-SDK-Plugin-CodeScan"
   s.version      = "0.0.1"
   s.summary      = "A short description of LEGO-SDK-Plugin-CodeScan."
-  s.description  = ""
+  s.description  = "A short description of LEGO-SDK-Plugin-CodeScan."
   s.homepage     = "http://EXAMPLE/LEGO-SDK-Plugin-CodeScan"
   s.license      = "MIT"
   s.author       = ""
