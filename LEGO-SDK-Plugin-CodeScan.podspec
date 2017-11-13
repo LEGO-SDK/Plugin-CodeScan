@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.author       = ""
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/LEGO-SDK/Plugin-CodeScan.git" }
-  s.source_files  = "ios/Source/*.{h,m}"
+  s.source_files  = "ios/Source/*.{h,m,xib}"
   s.requires_arc = true
 
 end
