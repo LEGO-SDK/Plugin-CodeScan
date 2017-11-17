@@ -45,7 +45,7 @@
         [[NSOperationQueue mainQueue] addOperationWithBlock:^{
             CodeScanViewController *codeScanViewController = [CodeScanViewController new];
             codeScanViewController.operation = self;
-            LGOBaseNavigationController *navigationController = [[LGOBaseNavigationController alloc] initWithRootViewController:codeScanViewController];
+            UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:codeScanViewController];
             [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:navigationController animated:YES completion:nil];
         }];
     } else if ([self.request.opt isEqualToString:@"Recognition"]) {
